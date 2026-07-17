@@ -10,8 +10,8 @@
 }
 
 .imageForArticle4 {
-    display: flex;
-    padding-left: 150px;
+    display: block;       /* Turn it into a block element */
+    margin: 0 auto;       /* This automatically perfectly centers it horizontally */
 
 }
 
@@ -26,8 +26,8 @@
 }
 
 .profileImage {
-    margin-left: 375px;
-    
+    display: block;       /* Turn it into a block element */
+    margin: 0 auto;       /* This automatically perfectly centers it horizontally */
 }
 
 @media only screen and (max-width: 532px) {
@@ -107,8 +107,10 @@
 }
 
 .headlineImageForArticle {
-    display: flex;
-    margin-left: 150px;
+    display: block;       /* Changed from flex to block */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 532px) {
@@ -140,8 +142,10 @@
 
 
 .imageForArticle3 {
-    display: flex;
-    margin-left: 115px;
+    display: block;       /* Changed from flex to block */
+    margin-left: auto;    /* Perfectly centers the image */
+    margin-right: auto;   /* Perfectly centers the image */
+    margin-bottom: 15px;  /* Adds a healthy gap below the image before text/footers */
 }
 
 
@@ -167,8 +171,10 @@
 }
 
 .smallerImageForArticle {
-    display: flex;
-    margin-left: 300px;
+    display: block;       /* Changed from flex to block */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 532px) {

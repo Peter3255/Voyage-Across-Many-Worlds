@@ -36,9 +36,8 @@ body {
 }
 
 .title {
-    display: flex;
-    /*margin-left: 95px;*/
-    margin-left: 55px;
+    display: block;       /* Turn it into a block element */
+    margin: 0 auto;       /* This automatically perfectly centers it horizontally */
     
 }
 
@@ -171,7 +170,8 @@ ul {
 .imgContainer2 {
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Changed from space-between to center */
+    gap: 230px;              /* Adds clean spacing between your images */
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
@@ -278,13 +278,14 @@ ul {
 .backgroundColor {
    /* background-color: rgb(211, 211, 211); */
     background-color: rgb(172, 172, 172); 
+    padding-top: 30px;
     
     
 }
 
 .pastAdventures {
-    display: flex;
-    padding-left: 250px;
+    display: block;       /* Turn it into a block element */
+    margin: 0 auto;       /* This automatically perfectly centers it horizontally */
 
 }
 
@@ -681,13 +682,9 @@ ul {
 }
 
 .imageForArticle {
-    display: flex;
-    padding-left: 150px;
-}
-
-.imageForArticle {
-    display: flex;
-    padding-left: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .imageForNews {
@@ -695,10 +692,12 @@ ul {
 }
 
 .imageForArticleArchives {
-    display: flex;
-    padding-left: 285px;
+    display: block;
+    margin-left: auto;       /* Combines with margin-right to perfectly center */
+    margin-right: auto;
     margin-top: 10px;
     padding-top: 30px;
+    /* padding-left: 285px; <-- REMOVE THIS */
 }
 
 .disclamer {
@@ -1239,8 +1238,10 @@ display: none;
 
 
 .discordPicture {
-    margin-left: 330px;
-    margin-top: 40px;
+    display: block;       /* Changes the image from inline to block */
+    margin-left: auto;    /* Automatically calculates left margin to center */
+    margin-right: auto;   /* Automatically calculates right margin to center */
+    margin-top: 40px;     /* Keeps your original spacing at the top */
 }
 
 
@@ -2024,7 +2025,10 @@ display: none;
 
 
 .videoForArticle {
-    margin-left: 150px;
+    display: block;        /* Ensures the element behaves as a block to allow auto margins */
+    margin-left: auto;     /* Automatically calculates equal spacing on both sides */
+    margin-right: auto;    
+    max-width: 100%;       /* Optional: Keeps it responsive */
 }
 
 
