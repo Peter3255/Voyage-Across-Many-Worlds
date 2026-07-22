@@ -185,7 +185,7 @@ ul {
 /* LAPTOP & SMALLER SCREENS (Chromebooks, smaller displays) */
 @media (max-width: 1400px) {
     .imgContainer2 {
-        gap: 5px; /* Reduces the huge gap so images don't overflow */
+        gap: 45px; /* Reduces the huge gap so images don't overflow */
     }
 
     .imgContainer2 img {
