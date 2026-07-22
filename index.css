@@ -168,14 +168,42 @@ ul {
 
 
 .imgContainer2 {
-    padding: 40px;
     display: flex;
-    justify-content: center; /* Changed from space-between to center */
-    gap: 230px;              /* Adds clean spacing between your images */
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+    justify-content: center;
+    gap: 230px; /* Big gap works great on large desktop screens */
+    padding: 40px 15px 10px 15px;
 }
+
+/* Style all images consistently */
+.imgContainer2 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* LAPTOP & SMALLER SCREENS (Chromebooks, smaller displays) */
+@media (max-width: 1400px) {
+    .imgContainer2 {
+        gap: 25px; /* Reduces the huge gap so images don't overflow */
+    }
+
+    .imgContainer2 img {
+        width: 275px; /* Slightly smaller images to fit comfortably */
+        height: 200px; /* Maintains the 4:3 aspect ratio */
+    }
+}
+
+/* MOBILE & TABLET SCREENS (Optional: Stack vertically on phones) */
+@media (max-width: 768px) {
+    .imgContainer2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
 
 
 .imgContainer4 {
